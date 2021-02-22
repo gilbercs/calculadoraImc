@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Size Fonte do Aplicatico Imc-->
+    <dimen name="titulo">24sp</dimen>
+    <dimen name="size_subtitulo">16sp</dimen>
+    <dimen name="txt_padrao">14sp</dimen>
+    <dimen name="txt_rodape">10sp</dimen>
+    <!--Size margem texto-->
+    <dimen name="mg_txt_left">15sp</dimen>
+    <dimen name="mg_txt_right">15sp</dimen>
+    <dimen name="mg_txt_star">10sp</dimen>
+    <!--Size layout padding-->
+    <dimen name="mg_edt_left">15sp</dimen>
+    <dimen name="mg_edt_right">15sp</dimen>
+    <!--Size layout margem-->
+    <dimen name="mg_layout_edt_letf">15sp</dimen>
+    <dimen name="mg_layout_edt_right">15sp</dimen>
+    <!--Size altura do edit-->
+    <dimen name="edt_altura_titulo">80sp</dimen>
+    <dimen name="edt_altura_caixa">10sp</dimen>
+    <!--Size borda do edit-->
+    <dimen name="edt_size_borda">3sp</dimen>
+    <dimen name="edt_size_circulo">10sp</dimen>
+
+</resources>

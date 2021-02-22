@@ -1,0 +1,19 @@
+<resources>
+    <!--String Nome do Aplicativo Imc-->
+    <string name="app_name">Calculadora IMC</string>
+    <string name="app_sobre">Sobre App</string>
+    <!--String text titulo do Aplicativo Imc-->
+    <string name="txt_titulo_app">Calculadora IMC</string>
+    <string name="txt_tabela_interpretação">Interpretação IMC</string>
+    <!--String text subtitulo do Aplicativo Imc-->
+    <string name="txt_altura">Altura(Ex: 1.70)</string>
+    <string name="txt_peso">Peso(Ex: 70):</string>
+    <string name="txt_resultado">Seu Imc: </string>
+    <string name="txt_classificacao">Classificação IMC</string>
+    <!--String Edit do Aplicativo Imc-->
+    <string name="edt_altura">Informe Altura?</string>
+    <string name="edt_peso">Informe Peso?</string>
+    <!--String Botão do Aplicativo Imc-->
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpar">Limpar</string>
+</resources>

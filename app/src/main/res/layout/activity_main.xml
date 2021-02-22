@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/idLayoutEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/cor_fundo_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/idLinearBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:padding="@dimen/mg_txt_star"
+            android:text="@string/txt_peso"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_subtitulo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/idCampoPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/edt_peso"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/mg_txt_star"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_padrao"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:padding="@dimen/mg_txt_star"
+            android:text="@string/txt_altura"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_subtitulo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/idCampoAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:layout_marginBottom="10sp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/edt_altura"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/mg_txt_star"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_padrao"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/idLinearBtn"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@color/cor_fundo_layout"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLayoutEditText"
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/idBtnCalcular"
+            style="null"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5sp"
+            android:onClick="calcularImc"
+            android:text="@string/btn_calcular"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/idBtnLimpar"
+            style="null"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5sp"
+            android:onClick="limparCampos"
+            android:text="@string/btn_limpar"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:backgroundTint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/idTabelaImc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/cor_fundo_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idLinearBtn">
+
+        <TextView
+            android:id="@+id/idTxtSeuImc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:background="@drawable/personalizar_campo_borda"
+            android:padding="@dimen/mg_txt_star"
+            android:text="@string/txt_resultado"
+            android:textColor="@color/cor_txt_resultado"
+            android:textSize="@dimen/titulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTxtInformacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:gravity="center"
+            android:padding="@dimen/mg_txt_star"
+            android:text="@string/txt_classificacao"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_subtitulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTxtInterpretacaoImc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mg_layout_edt_letf"
+            android:layout_marginLeft="@dimen/mg_layout_edt_letf"
+            android:layout_marginEnd="@dimen/mg_layout_edt_right"
+            android:layout_marginRight="@dimen/mg_layout_edt_right"
+            android:background="@drawable/personalizar_campo_borda"
+            android:gravity="center"
+            android:padding="@dimen/mg_txt_star"
+            android:text="@string/txt_classificacao"
+            android:textColor="@color/cor_txt_resultado"
+            android:textSize="@dimen/txt_padrao"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

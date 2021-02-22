@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- confuguração do fundo da caixa de edit text-->
+        <solid android:color="@color/cor_fundo_personalizado"/>
+        <!--Configuração da borda do editText-->
+        <stroke android:width="@dimen/edt_size_borda"
+            android:color="@color/white"/>
+        <corners android:radius="@dimen/edt_size_circulo"/>
+
+    </shape>
