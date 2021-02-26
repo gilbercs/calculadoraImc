@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    //Classe principal do app
     //declaração de variaveis/componentes da tela
     private EditText edtCampoPeso, edtCampoAltura;
     private Button btnCalcular, btnLimpar;
@@ -39,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         txtInformacao.setVisibility(View.GONE);
         txtInterpretacaoImc.setVisibility(View.GONE);
     }
-
+//menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
-
+//itens de menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
@@ -58,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
+//recebendo dados de entrada
     public void calcularImc(View view){
         String strCampoPeso, strCampoAltura;
         strCampoPeso = edtCampoPeso.getText().toString();
         strCampoAltura = edtCampoAltura.getText().toString();
-        //verificar campos
+        //verificar campos e valida
         if (!strCampoPeso.isEmpty()){
             if (!strCampoAltura.isEmpty()){
                 Double peso, altura, calculo;
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
             edtCampoPeso.requestFocus();
         }
     }
+    //limpar campos
     public void limparCampos(View view){
         txtSeuImc.setVisibility(View.GONE);
         txtInformacao.setVisibility(View.GONE);
@@ -104,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         txtSeuImc.setText("");
         edtCampoPeso.requestFocus();
     }
+    //intrepretação do imc
     public void interpretacaoImc(Double imc){
         if (imc < 18.5){
             txtInterpretacaoImc.setText("MENOR QUE 18,5 -> Baixo peso");
