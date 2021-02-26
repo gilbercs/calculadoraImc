@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Configuração de Cor do App"-->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#20B2AA</color>
     <color name="purple_700">#008080</color>
