@@ -1,5 +1,5 @@
 <resources>
-    <!--String Nome do Aplicativo Imc-->
+    <!--Configuração de String do Aplicativo Calculadora Imc-->
     <string name="app_name">Calculadora IMC</string>
     <string name="app_sobre">Sobre App</string>
     <!--String text titulo do Aplicativo Imc-->
