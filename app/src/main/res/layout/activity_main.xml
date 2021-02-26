@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cor_fundo_layout"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -90,6 +91,7 @@
 
     <LinearLayout
         android:id="@+id/idLinearBtn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -100,8 +102,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idLayoutEditText"
-        android:layout_width="match_parent">
+        app:layout_constraintTop_toBottomOf="@+id/idLayoutEditText">
 
         <Button
             android:id="@+id/idBtnCalcular"
