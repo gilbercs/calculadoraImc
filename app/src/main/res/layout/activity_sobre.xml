@@ -7,7 +7,7 @@
     android:background="@color/cor_fundo_layout"
     android:padding="10sp"
     tools:context=".SobreActivity">
-
+<!--Descrição do App-->
     <TextView
         android:id="@+id/idDescricao"
         android:layout_width="wrap_content"
