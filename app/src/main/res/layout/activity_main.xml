@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/cor_fundo_layout"
     tools:context=".MainActivity">
-
     <LinearLayout
         android:id="@+id/idLayoutEditText"
         android:layout_width="0dp"
