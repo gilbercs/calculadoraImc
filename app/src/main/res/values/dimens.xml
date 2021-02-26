@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Size Fonte do Aplicatico Imc-->
+    <!--Configuração do Tamanho da Fonte utilizada no App-->
     <dimen name="titulo">24sp</dimen>
     <dimen name="size_subtitulo">16sp</dimen>
     <dimen name="txt_padrao">14sp</dimen>
