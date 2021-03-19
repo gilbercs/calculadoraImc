@@ -1,4 +1,4 @@
-# App Calculadora IMC  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=calculadoraImc)
+# App Calculadora IMC
 _O aplicativo é uma calculadora de IMC onde você pode avaliar seu índice de massa corporal baseado na informação relevante no peso de corpo, na altura do indivíduo._
 ---
 _Imagens do App_
