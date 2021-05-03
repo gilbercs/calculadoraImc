@@ -7,4 +7,4 @@ _Imagens do App_
 ![device-2021-02-24-221950](https://user-images.githubusercontent.com/72363971/109090107-372faf80-76f1-11eb-8b46-1d481f770c3c.png)
 
 
-[Aplicativo delivery com código pronto + Passo a Passo](https://go.hotmart.com/H50698739H)
+Obrigado pela visita...
